@@ -111,11 +111,11 @@ function App() {
               />
               <textarea
                 placeholder="Dejá tu mensaje (opcional)"
-                className="mt-4 w-full max-w-md p-3 rounded bg-purple-500"
+                className="mt-2 w-full max-w-md p-3 rounded bg-purple-500"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
-              <div className="flex-column mt-3">
+              <div className="flex-column mt-2">
                 <button
                   onClick={handleUpload}
                   className="btn mb-2 py-5"
@@ -147,7 +147,7 @@ function App() {
           )}
         </>
       ) : (
-        <div className="text-2xl text-red-400 font-bold bg-white-500/50">
+        <div className="text-2xl text-red-400 font-bold bg-white">
           ¡Gracias! Tu foto se está mostrando en pantalla 🎉
         </div>
       )}
