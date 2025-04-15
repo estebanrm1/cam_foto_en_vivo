@@ -115,10 +115,10 @@ function App() {
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
-              <div className="flex-column mt-4">
+              <div className="flex-column mt-3">
                 <button
                   onClick={handleUpload}
-                  className="btn mb-3 py-5"
+                  className="btn mb-2 py-5"
                 >
                 <strong>Enviar</strong>
                 <div id="container-stars">
