@@ -24,7 +24,7 @@ body {
       linear-gradient(
         137.48deg,
         #ffdb3b 10%,
-        #fe53bb 45%,
+        #fe5370 45%,
         #8f51ea 67%,
         #0044ff 87%
       );
@@ -47,7 +47,7 @@ body {
     z-index: 2;
     font-family: "Avalors Personal Use";
     font-size: 16px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #ffffff;
     text-shadow: 0 0 4px white;
   }
@@ -67,11 +67,11 @@ body {
   }
   
   .circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
+    background: rgba(254, 89, 83, 0.636);
   }
   
   .circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
+    background: rgba(234, 206, 81, 0.704);
   }
   
   .btn:hover #container-stars {
@@ -91,7 +91,7 @@ body {
   }
   
   .btn:active .circle {
-    background: #fe53bb;
+    background: #70fe53;
   }
   
   #stars {
