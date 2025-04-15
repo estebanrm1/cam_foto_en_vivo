@@ -147,7 +147,7 @@ function App() {
           )}
         </>
       ) : (
-        <div className="text-2xl text-red-400 font-bold background-clip-text bg-white-500/50">
+        <div className="text-2xl text-red-400 font-bold bg-white-500/50">
           ¡Gracias! Tu foto se está mostrando en pantalla 🎉
         </div>
       )}
