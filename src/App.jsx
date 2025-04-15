@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import './index.css';
+
 
 function App() {
   const videoRef = useRef(null);
@@ -89,11 +91,15 @@ function App() {
                 playsInline
                 className="w-full max-w-md rounded-xl shadow-lg"
               />
-              <button
-                onClick={takePhoto}
-                className="mt-6 bg-blue-500 hover:bg-red-600 text-yellow font-bold py-4 px-8 rounded-full text-xl"
-              >
-                📸 ¡Sacar Foto!
+              <button onClick={takePhoto} className="btn py-5 my-5">
+                <strong>¡Sacar Foto!</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
               </button>
             </>
           ) : (
@@ -105,30 +111,44 @@ function App() {
               />
               <textarea
                 placeholder="Dejá tu mensaje (opcional)"
-                className="mt-4 w-full max-w-md p-3 rounded text-black"
+                className="mt-4 w-full max-w-md p-3 rounded bg-purple-500"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-2 mt-4">
                 <button
                   onClick={handleUpload}
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full"
+                  className="btn py-5 ms-2"
                 >
-                  Enviar
+                <strong>Enviar</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
                 </button>
                 <button
                   onClick={retryPhoto}
-                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full"
+                  className="btn py-5 me-2"
                 >
-                  Volver a intentar
+                  <strong>Volver a intentar</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
                 </button>
               </div>
             </>
           )}
         </>
       ) : (
-        <div className="text-2xl font-semibold">
-          ¡Gracias! Tu foto se está mostrando en pantalla 🎉😊
+        <div className="text-2xl text-red-400 font-bold">
+          ¡Gracias! Tu foto se está mostrando en pantalla 🎉
         </div>
       )}
       <canvas ref={canvasRef} className="hidden"></canvas>
