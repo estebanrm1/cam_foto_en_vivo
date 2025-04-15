@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './index.css';
+import './h1style.css';
 
 
 function App() {
@@ -85,6 +86,9 @@ function App() {
         <>
           {!previewUrl ? (
             <>
+              <div className="div-h1">
+                <h1><span>Feliz cumple</span> <span>Lorenzo</span></h1>
+              </div>
               <video
                 ref={videoRef}
                 autoPlay
@@ -97,8 +101,8 @@ function App() {
                   <div id="stars"></div>
                 </div>
                 <div id="glow">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
                 </div>
               </button>
             </>
@@ -125,8 +129,8 @@ function App() {
                   <div id="stars"></div>
                 </div>
                 <div id="glow">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
                 </div>
                 </button>
                 <button
@@ -138,8 +142,8 @@ function App() {
                   <div id="stars"></div>
                 </div>
                 <div id="glow">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
                 </div>
                 </button>
               </div>
